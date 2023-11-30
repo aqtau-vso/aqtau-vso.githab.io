@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Информация о городе Актау</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('file:///C:/Users/muras/Downloads/aqtaupng.png'); /* Замените на URL вашего изображения */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-y: scroll; /* Добавляем вертикальную прокрутку */
+        }
+
+        .content {
+            max-width: 800px;
+            padding: 20px;
+            text-align: left;
+            color: black;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        p {
+            font-size: 1.5em;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        img {
+            width: 100%; /* Сделаем изображение заполняющим ширину блока */
+            height: auto; /* Позволим изображению сохранять пропорции */
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <h1> Добро пожаловать в Город Актау</h1>
+    <p>Актау — город на берегу Каспийского моря в Казахстане. Известен своими нефтяными месторождениями и промышленным развитием. Город является важным портом на Каспийском море, а также центром нефтяной и газовой промышленности. Актау предлагает разнообразные культурные мероприятия и красивые пляжи, пользуется популярностью среди туристов. Это также центр крупной нефтегазовой промышленности с развитой инфраструктурой. Город имеет многочисленные образовательные учреждения, медицинские центры и разнообразные торговые объекты. Климат в Актау умеренно-континентальный, с жарким летом и мягкой зимой. Местные достопримечательности включают в себя уникальные пейзажи Мангистау, исторические места и заповедники. Актау активно развивает туризм, привлекая любителей активного отдыха и экскурсий.</p>
+	<img src="https://tengrinews.kz/userdata/news/2023/news_507758/resize/photo_440802.jpeg" alt="Второе изображение" width="900" height="600">
+    <p>Город также является ключевым транспортным хабом в регионе, имея морской порт и железнодорожные пути, связывающие его с другими регионами страны. Благодаря своему стратегическому местоположению на берегу Каспийского моря, Актау играет важную роль в торговле и экономике Казахстана. Город имеет динамично развивающуюся инфраструктуру и привлекательные инвестиционные возможности.</p>
+    <!-- Вставка изображения -->
+    <img src="https://el.kz/upload/storage_el/6a/6a6f36f545d8d345a3128d38ec63e625.jpg" alt="Изображение Актау" width="900" height="600">
+    <p>В горной части Мангистау разведаны проявления фосфоритов и железных руд. На территории области известно также одно месторождение марганца, разведанные запасы составляют около 2,7 млн. тонн, среднее содержание марганца — 12 %. Известны также месторождения меди, поваренной соли, минеральных солей (мирабилит, тенардит).<p>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Событие прокрутки</title>
+    <style>
+        body {
+            height: 2000px; /* Для тестирования прокрутки */
+            font-family: Arial, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        .scroll-indicator {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px 20px;
+            display: none;
+            transition: opacity 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll-indicator">Прокручено</div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            let scrollIndicator = document.querySelector('.scroll-indicator');
+
+            if (window.scrollY > 500) { // Пример: когда страница прокручена на 500px, появится индикатор
+                scrollIndicator.style.display = 'block';
+            } else {
+                scrollIndicator.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
